@@ -28,5 +28,10 @@ public abstract class People {
 		this.annualIncome = annualIncome;
 	}
 
-	public abstract Double totalTaxCollected();
+	public abstract Double tax();
+
+	@Override
+	public String toString() {
+		return name + ": $ " + String.format("%.2f", tax());
+	}
 }
