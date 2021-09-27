@@ -1,21 +1,21 @@
 package entities;
 
 public class LegalPerson extends People {
-	private Double quantity;
+	private Integer quantity;
 
 	public LegalPerson() {
 	}
 
-	public LegalPerson(String name, Double annualIncome, Double quantity) {
+	public LegalPerson(String name, Double annualIncome, Integer quantity) {
 		super(name, annualIncome);
 		this.quantity = quantity;
 	}
 
-	public Double getQuantity() {
+	public Integer getQuantity() {
 		return quantity;
 	}
 
-	public void setQuantity(Double quantity) {
+	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
 	}
 
